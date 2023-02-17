@@ -77,7 +77,8 @@ function descrecente(){
   ord3 = Number(ord3)
 }
 function Tirarfoto(){
-  navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{
+  const specs =  {video:{width:320}}
+  navigator.mediaDevices.getUserMedia(specs).then(stream=>{
     const videoElement = document.querySelector("#video")
     videoElement.srcObject = stream
   }).catch(erro=>{console.log(error)})
