@@ -66,3 +66,22 @@ function inverter(){
 window.alert(` Antes ${valor1}/${valor2}\nDepois ${v1}/${v2}`)
 res4.innerHTML = ` Antes ${valor1}/${valor2}\nDepois ${v1}/${v2}`
 }
+function descrecente(){
+  var res6 = document.getElementById('res6')
+  var ord1= document.getElementById('ord1').value
+  var ord2= document.getElementById('ord2').value
+  var ord3= document.getElementById('ord3').value
+
+  ord1 = Number(ord1)
+  ord2 = Number(ord2)
+  ord3 = Number(ord3)
+}
+function Tirarfoto(){
+  navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{
+    const videoElement = document.querySelector("#video")
+    videoElement.srcObject = stream
+  }).catch(erro=>{console.log(error)})
+
+}
+window.addEventListener("DOMContentLoaded",Tirarfoto)
+
