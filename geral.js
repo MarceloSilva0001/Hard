@@ -56,14 +56,13 @@ function nota(){
   // res2.innerHTML = `notas (${nota1} e ${nota2}), sua média é ${media} `
 }
 function inverter(){
- 
-  var v1 = document.getElementById('valor1').value
-  var v2 = document.getElementById('valor2').value
- // var val1 = Number(v1.value)
-  //var val2 = Number(v2.value)
-  var aux = val1
-  var val1 = val2
-  var val2 = aux
-  // window.alert(`Sem inversão ${v1} & ${v2} \n--------\nInvertido ${val1} & ${val2} ${aux}`)
-  window.alert(`${v1}/${v2}\n${val1}/${val2}`)
+ var valor1 = document.getElementById('valor1').value
+ var valor2 = document.getElementById('valor2').value
+ var res4 = document.getElementById('res4')
+
+ var aux = Number(valor1)
+  v1 = Number(valor2)
+  v2 = aux
+window.alert(` Antes ${valor1}/${valor2}\nDepois ${v1}/${v2}`)
+res4.innerHTML = ` Antes ${valor1}/${valor2}\nDepois ${v1}/${v2}`
 }
