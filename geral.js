@@ -57,10 +57,13 @@ function nota(){
 }
 function inverter(){
  
-  var v1 = document.getElementById('valor1')
-  var v2 = document.getElementById('valor2')
-  var val1 = Number(v1.value)
-  var val2 = Number(v2.value)
-
-  window.alert(`Sem inversão ${v1} & ${v2} \nInvertido ${val2} & ${val2}`)
+  var v1 = document.getElementById('valor1').value
+  var v2 = document.getElementById('valor2').value
+ // var val1 = Number(v1.value)
+  //var val2 = Number(v2.value)
+  var aux = val1
+  var val1 = val2
+  var val2 = aux
+  // window.alert(`Sem inversão ${v1} & ${v2} \n--------\nInvertido ${val1} & ${val2} ${aux}`)
+  window.alert(`${v1}/${v2}\n${val1}/${val2}`)
 }
