@@ -38,8 +38,11 @@ function menormaior(){
 }
 function nota(){
   var res2 = document.getElementById('res2')
-  var nota1 = document.getElementById('nota1').value
-  var nota2 = document.getElementById('nota2').value
+  
+  var num1 = document.getElementById('nota1')
+  var num2 = document.getElementById('nota2')
+  var nota1 = Number(num1.value)
+  var nota2 = Number(num2.value)
   var media = (nota1+nota2)/2
   if(media >= 6){
     res2.innerHTML = `"Aprovado", suas notas (${nota1} e ${nota2}), sua média é ${media} `
@@ -50,5 +53,5 @@ function nota(){
     res2.innerHTML = `"Reprovado, suas notas (${nota1} e ${nota2}), sua média é ${media} `
   }
 
-  res2.innerHTML = `notas (${nota1} e ${nota2}), sua média é ${media} `
+  // res2.innerHTML = `notas (${nota1} e ${nota2}), sua média é ${media} `
 }
