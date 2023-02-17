@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="geral.js"></script>
+    <style>
+        :root{
+            --cor0:rgb(255, 255, 255);
+            --cor1:rgb(25, 183, 231);
+            --cor2:rgb(134, 111, 111);
+            --cor3:darkgrey;
+        }
+        body{
+            background-color: var(--cor3);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            max-width:400px;
+            margin: 10px auto;
+            text-align: center;
+            background-color:var(--cor2);
+            color:white;
+            border-radius: 20px;
+            border: 2px solid var(--cor1);
+            padding: 10px;
+        }
+        div > .input{
+            margin: 5px;
+            background-color:var(--cor1);
+            color: var(--cor0);
+            padding: 5px;
+            border-radius: 10px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        div > .button{
+            border: 2px solid var(--cor1);
+            border-radius: 5px;
+            padding: 5px;
+            color:var(--cor0);
+            cursor: pointer;
+            background-color:var(--cor2);
+        }
+        div > .button:hover{
+            border: 2px solid var(--cor0);
+            
+            color:var(--cor0);
+            background-color:var(--cor2);
+        }
+        div > h1{
+            color: var(--cor0);
+        }
+        div.none{
+            display: none;
+        }
+
+    </style>
+    <title>Ex geral</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><a href="https://www.javascriptprogressivo.net/2018/12/Descobrir-Maior-Menor-Numero-javaScript.html" target="_blank">Exercicios</a></h1>
+    <!----FEITO---->
+    <div class="none">
+        <p>1) Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.</p>
+        <hr>
+        <input class="input"type="text" name="ex1" id="ex1" minlength="1" maxlength="1" required placeholder="letras 'minusculas'"> <br>
+        <input class="button" type="button" value="Verificar" onclick="letra()">
+        <hr>
+        <p id="res1"></p>
+        
+    </div>
+    <!-- FEITO -->
+    <div class="none">
+        <p>2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado: <br>A mensagem "Aprovado", se a média alcançada for maior ou igual a sete; <br>A mensagem "Reprovado", se a média for menor do que sete; <br>A mensagem "Aprovado com Distinção", se a média for igual a dez....</p>
+        <hr>
+        <label for="num1">1° Nota </label>
+        <input class="input" type="number" name="nota1" id="nota1" placeholder="Digigite  o numero"> <br>
+
+        <label for="num1">2° Nota </label>
+        <input class="input" type="number" name="nota2" id="nota2" placeholder="Digigite  o numero"> <br>
+
+        <input class="button" type="button" value="Calcular" onclick="nota()">
+        <hr>
+        <p id="res2"></p>
+    </div>
+     <!-- FEITO -->
+    <div class="none">
+        <p>3) Faça um script que leia três números inteiros e mostre o maior deles e o menor.</p>
+        <label for="num1">Numero 1°</label>
+        <input class="input" type="number" name="num1" id="num1" placeholder="Digigite  o numero" minlength="1"> <br>
+
+        <label for="num1">Numero 2°</label>
+        <input class="input" type="number" name="num2" id="num2" placeholder="Digigite  o numero" minlength="1"> <br>
+
+        <label for="num1">Numero 3°</label>
+        <input class="input" type="number" name="num3" id="num3" placeholder="Digigite  o numero" minlength="1"> <br>
+
+        <input class="button" type="button" value="Maior" onclick="soma3num()">
+        <input class="button" type="button" value="Menor" onclick="menormaior()">
+        <hr>
+        <p id="res3"></p>
+    </div>
+     <!-- SEPARADO -->
+    <div class="block">
+        <p>4. Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.<br> Fazer duas variáveis trocarem de valores entre si - Variável Auxiliar</p>
+        <hr>
+            <label for="valor1">Valor 1</label>
+        <input type="number" class="input" name="valor1" id="valor1" value="10"> <br>
+
+            <label for="valor2">Valor 2</label>
+        <input type="number" class="input" name="valor2" id="valor2" value="20"> <br>
+
+    <input type="button" value="Inverter" class="button" onclick="inverter()">
+
+    </div>
+     <!-- SEPARADO -->
+</body>
+</html>
