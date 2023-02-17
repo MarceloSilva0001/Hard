@@ -55,3 +55,12 @@ function nota(){
 
   // res2.innerHTML = `notas (${nota1} e ${nota2}), sua média é ${media} `
 }
+function inverter(){
+ 
+  var v1 = document.getElementById('valor1')
+  var v2 = document.getElementById('valor2')
+  var val1 = Number(v1.value)
+  var val2 = Number(v2.value)
+
+  window.alert(`Sem inversão ${v1} & ${v2} \nInvertido ${val2} & ${val2}`)
+}

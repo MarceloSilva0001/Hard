@@ -62,7 +62,7 @@
 <body>
     <h1 style="text-align: center;"><a href="https://www.javascriptprogressivo.net/2018/12/Descobrir-Maior-Menor-Numero-javaScript.html" target="_blank">Exercicios</a></h1>
     <!----FEITO---->
-    <div class="block">
+    <div class="none">
         <p>1) Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.</p>
         <hr>
         <input class="input"type="text" name="ex1" id="ex1" minlength="1" maxlength="1" required placeholder="letras 'minusculas'"> <br>
@@ -71,7 +71,7 @@
         <p id="res1"></p>
     </div>
     <!-- FEITO -->
-    <div class="block">
+    <div class="none">
         <p>2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado: <br>A mensagem "Aprovado", se a média alcançada for maior ou igual a sete; <br>A mensagem "Reprovado", se a média for menor do que sete; <br>A mensagem "Aprovado com Distinção", se a média for igual a dez.</p>
         <hr>
         <label for="num1">1° Nota </label>
@@ -85,7 +85,7 @@
         <p id="res2"></p>
     </div>
      <!-- FEITO -->
-    <div class="block">
+    <div class="none">
         <p>3) Faça um script que leia três números inteiros e mostre o maior deles e o menor.</p>
         <label for="num1">Numero 1°</label>
         <input class="input" type="number" name="num1" id="num1" placeholder="Digigite  o numero" minlength="1"> <br>
@@ -102,9 +102,16 @@
         <p id="res3"></p>
     </div>
      <!-- SEPARADO -->
-    <div class="none">
+    <div class="block">
         <p>4. Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.<br> Fazer duas variáveis trocarem de valores entre si - Variável Auxiliar</p>
         <hr>
+            <label for="valor1">Valor 1</label>
+        <input type="number" class="input" name="valor1" id="valor1" value="10"> <br>
+
+            <label for="valor2">Valor 2</label>
+        <input type="number" class="input" name="valor2" id="valor2" value="10"> <br>
+    <input type="button" value="Inverter" class="button" onclick="inverter()">
+       
     </div>
      <!-- SEPARADO -->
 </body>
