@@ -76,13 +76,14 @@ function descrecente(){
   ord2 = Number(ord2)
   ord3 = Number(ord3)
 }
-function Tirarfoto(){
+
   const specs =  {video:{width:320}}
   navigator.mediaDevices.getUserMedia(specs).then(stream=>{
+
     const videoElement = document.querySelector("#video")
     videoElement.srcObject = stream
-  }).catch(erro=>{console.log(error)})
+    
+  })//.catch(erro=>{console.log(error)})
 
-}
-window.addEventListener("DOMContentLoaded",Tirarfoto)
+ window.addEventListener("DOMContentLoaded",Tirarfoto);
 
