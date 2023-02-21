@@ -1,0 +1,54 @@
+:root{
+    --cor0:rgb(255, 255, 255);
+    --cor1:rgb(25, 183, 231);
+    --cor2:rgb(134, 111, 111);
+    --cor3:darkgrey;
+}
+body{
+    background-color: var(--cor3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    max-width:400px;
+    margin: 10px auto;
+    text-align: center;
+    background-color:var(--cor2);
+    color:white;
+    border-radius: 20px;
+    border: 2px solid var(--cor1);
+    padding: 10px;
+}
+div > .input{
+    margin: 5px;
+    background-color:var(--cor1);
+    color: var(--cor0);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+div > .button{
+    border: 2px solid var(--cor1);
+    border-radius: 5px;
+    padding: 5px;
+    color:var(--cor0);
+    cursor: pointer;
+    background-color:var(--cor2);
+}
+div > .button:hover{
+    border: 2px solid var(--cor0);
+    
+    color:var(--cor0);
+    background-color:var(--cor2);
+}
+div > h1{
+    color: var(--cor0);
+}
+div.none{
+    display: none;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
