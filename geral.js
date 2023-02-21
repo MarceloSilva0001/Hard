@@ -59,7 +59,7 @@ function inverter(){
  var valor1 = document.getElementById('valor1').value
  var valor2 = document.getElementById('valor2').value
  var res4 = document.getElementById('res4')
-
+//....
  var aux = Number(valor1)
   v1 = Number(valor2)
   v2 = aux
