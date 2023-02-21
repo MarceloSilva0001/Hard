@@ -4,70 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="geral.js"></script>
-    <style>
-        :root{
-            --cor0:rgb(255, 255, 255);
-            --cor1:rgb(25, 183, 231);
-            --cor2:rgb(134, 111, 111);
-            --cor3:darkgrey;
-        }
-        body{
-            background-color: var(--cor3);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        div{
-            max-width:400px;
-            margin: 10px auto;
-            text-align: center;
-            background-color:var(--cor2);
-            color:white;
-            border-radius: 20px;
-            border: 2px solid var(--cor1);
-            padding: 10px;
-        }
-        div > .input{
-            margin: 5px;
-            background-color:var(--cor1);
-            color: var(--cor0);
-            padding: 5px;
-            border-radius: 10px;
-            font-weight: bolder;
-            text-align: center;
-        }
-        div > .button{
-            border: 2px solid var(--cor1);
-            border-radius: 5px;
-            padding: 5px;
-            color:var(--cor0);
-            cursor: pointer;
-            background-color:var(--cor2);
-        }
-        div > .button:hover{
-            border: 2px solid var(--cor0);
-            
-            color:var(--cor0);
-            background-color:var(--cor2);
-        }
-        div > h1{
-            color: var(--cor0);
-        }
-        div.none{
-            display: none;
-        }
-
-    </style>
     <title>Hard</title>
 </head>
 <body>
     <h1 style="text-align: center;"><a href="https://www.javascriptprogressivo.net/2018/08/Exercicios-IF-ELSE-JavaScript.html" target="_blank">Exercicios</a></h1>
+     <!----idade---->
+     <div>
+        <label for="nasc">Ano de Nascimento:</label>
+        <input class="input" type="number" name="nasc" id="nasc" min="0" value="2020"><br> 
+
+        <p>sexo:
+            <label for="sexo">Masculino</label>
+            <input type="radio" name="sexo" id="masc" checked>
+
+            <label for="sexo">Feminino</label>
+            <input type="radio" name="sexo" id="fem">
+        </p>
+        
+        <input class="button" type="button" value="Validar" onclick="anodenascimento()">
+        <hr>
+    <p id="res">Complete os Campos!</p>
+    </div>
     <!----Camera---->
     <div>
         <p>Sorria, você está sendo Filmando!!</p>
         <video id="video" autoplay></video>
-        
     </div>
-    
     <!----FEITO---->
     <div class="Block">
         <p>1) Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.</p>
