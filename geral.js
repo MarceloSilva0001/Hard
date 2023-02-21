@@ -76,7 +76,7 @@ function descrecente(){
   ord2 = Number(ord2)
   ord3 = Number(ord3)
 }
-//Código da foto
+//Código da foto...
   const specs =  {video:{width:320}}
   navigator.mediaDevices.getUserMedia(specs).then(stream=>{
 
