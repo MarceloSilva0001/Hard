@@ -147,7 +147,7 @@ function mudarFundo(){
   var data = new Date();
   var hora = data.getHours;
 
-  mostrehora.innerText = hora;
+  mostrehora.innerText = hora
 
 }
 //-------------------
@@ -159,6 +159,7 @@ function mudarFundo(){
     videoElement.srcObject = stream
     
   })//.catch(erro=>{console.log(error)})
+
  window.addEventListener("DOMContentLoaded",Tirarfoto);
 //-------------------
 
