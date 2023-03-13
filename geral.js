@@ -145,9 +145,20 @@ function anodenascimento(){
 function mudarFundo(){
   var mostrehora = document.getElementById('mostrehora');
   var data = new Date();
-  var hora = data.getHours;
+  var horas = data.getHours();
+  
+    if(horas >= 0 && horas < 6){
+      mostrehora.innerText = `Agora é ${horas} Horas Madrugada`
+     
+    }else if(horas >= 6 && horas < 12){
+      mostrehora.innerText = `Agora é ${horas} Horas Manhã`
 
-  mostrehora.innerText = hora
+    }else if(horas >= 12 && horas < 18){
+      mostrehora.innerText = `Agora é ${horas} Horas Tarde`
+
+    }else if(horas >= 18 && horas < 23){
+      mostrehora.innerText = `Agora é ${horas} Horas Noite`
+    }
 
 }
 //-------------------
