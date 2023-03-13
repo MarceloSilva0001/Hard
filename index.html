@@ -8,8 +8,11 @@
     <script src="geral.js"></script>
     <title>Hard</title>
 </head>
-<body>
+<body onload="mudarFundo()">
     <h1 style="text-align: center;"><a href="https://www.javascriptprogressivo.net/2018/08/Exercicios-IF-ELSE-JavaScript.html" target="_blank">Exercicios</a></h1>
+
+    <!-- Body, muda conforme o horario -->
+    <div id="mostrehora"></div>
      <!----idade---->
      <div>
         <label for="nasc">Ano de Nascimento:</label>
@@ -32,7 +35,7 @@
         <p>Sorria, você está sendo Filmando!!</p>
         <video id="video" autoplay></video>
     </div>
-    <!----FEITO---->
+    <!----Vogal/Consoante---->
     <div class="Block">
         <p>1) Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante.</p>
         <hr>
@@ -42,7 +45,7 @@
         <p id="res1"></p>
         
     </div>
-    <!-- FEITO -->
+    <!-- Duas notas/aluno -->
     <div class="Block">
         <p>2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado: <br>A mensagem "Aprovado", se a média alcançada for maior ou igual a sete; <br>A mensagem "Reprovado", se a média for menor do que sete; <br>A mensagem "Aprovado com Distinção", se a média for igual a dez....</p>
         <hr>
@@ -56,7 +59,7 @@
         <hr>
         <p id="res2"></p>
     </div>
-     <!-- FEITO -->
+     <!-- leia 3 num/maior/menor -->
     <div class="Block">
         <p>3) Faça um script que leia três números inteiros e mostre o maior deles e o menor.</p>
         <label for="num1">Numero 1°</label>
@@ -73,7 +76,7 @@
         <hr>
         <p id="res3"></p>
     </div>
-     <!-- FEITO -->
+     <!-- Invertendo valores -->
     <div class="Block">
         <p>4. Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.<br> Fazer duas variáveis trocarem de valores entre si - Variável Auxiliar</p>
         <hr>
@@ -87,7 +90,7 @@
     <hr>
         <p id="res4"></p>
     </div>
-     <!-- SEPARADO -->
+     <!-- Numeros/Ordem crescente -->
      <div>
         <p>6) Faça um script que leia três números e mostre-os em ordem decrescente.</p>
             <hr>

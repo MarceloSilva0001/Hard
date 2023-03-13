@@ -142,7 +142,14 @@ function anodenascimento(){
     res.appendChild(img)
  }
 }
+function mudarFundo(){
+  var mostrehora = document.getElementById('mostrehora');
+  var data = new Date();
+  var hora = data.getHours;
 
+  mostrehora.innerText = hora;
+
+}
 //-------------------
 //Código da foto...
   const specs =  {video:{width:320}}
@@ -152,6 +159,6 @@ function anodenascimento(){
     videoElement.srcObject = stream
     
   })//.catch(erro=>{console.log(error)})
-
  window.addEventListener("DOMContentLoaded",Tirarfoto);
+//-------------------
 
