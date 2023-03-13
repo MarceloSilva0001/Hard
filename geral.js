@@ -143,7 +143,6 @@ function anodenascimento(){
  }
 }
 function mudarFundo(){
-  var mostrehora = document.getElementById('mostrehora');
   var mostrehrs = document.getElementById('mostrehrs');
   var img = document.createElement("img");
   var data = new Date();
@@ -152,23 +151,12 @@ function mudarFundo(){
     mostrehrs.innerText = `Agora é ${horas} Horas `
 
     if(horas >= 0 && horas < 6){
-      
-      img.src = 'noite.jpg';
-      mostrehora.appendChild(img);
       document.body.style.backgroundImage = "url(noite.jpg)";
     }else if(horas >= 6 && horas < 12){
-      
-      img.src = 'manhã.jpg.jpg';
-      mostrehora.appendChild(img);
       document.body.style.backgroundImage = "url(manhã.jpg)";
     }else if(horas >= 12 && horas < 18){
-      
-      img.src = 'tarde.jpg';
-      mostrehora.appendChild(img);
       document.body.style.backgroundImage = "url(tarde.jpg)";
     }else if(horas >= 18){
-      img.src = 'noite.jpg';
-      mostrehora.appendChild(img);
       document.body.style.backgroundImage = "url(noite.jpg)";
     }
 }
