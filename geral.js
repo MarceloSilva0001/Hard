@@ -155,18 +155,21 @@ function mudarFundo(){
       
       img.src = 'noite.jpg';
       mostrehora.appendChild(img);
+      document.body.style.backgroundImage = "url(noite.jpg)";
     }else if(horas >= 6 && horas < 12){
       
       img.src = 'manhã.jpg.jpg';
       mostrehora.appendChild(img);
+      document.body.style.backgroundImage = "url(manhã.jpg)";
     }else if(horas >= 12 && horas < 18){
       
       img.src = 'tarde.jpg';
       mostrehora.appendChild(img);
+      document.body.style.backgroundImage = "url(tarde.jpg)";
     }else if(horas >= 18){
       img.src = 'noite.jpg';
       mostrehora.appendChild(img);
-      window.document.body.style.backgroundImage = "url(noite.jpg)";
+      document.body.style.backgroundImage = "url(noite.jpg)";
     }
 }
 //-------------------
