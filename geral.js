@@ -144,22 +144,30 @@ function anodenascimento(){
 }
 function mudarFundo(){
   var mostrehora = document.getElementById('mostrehora');
+  var mostrehrs = document.getElementById('mostrehrs');
+  var img = document.createElement("img");
   var data = new Date();
   var horas = data.getHours();
-  
+
+    mostrehrs.innerText = `Agora é ${horas} Horas `
+
     if(horas >= 0 && horas < 6){
-      mostrehora.innerText = `Agora é ${horas} Horas Madrugada`
-     
+      
+      img.src = 'noite.jpg';
+      mostrehora.appendChild(img);
     }else if(horas >= 6 && horas < 12){
-      mostrehora.innerText = `Agora é ${horas} Horas Manhã`
-
+      
+      img.src = 'manhã.jpg.jpg';
+      mostrehora.appendChild(img);
     }else if(horas >= 12 && horas < 18){
-      mostrehora.innerText = `Agora é ${horas} Horas Tarde`
-
-    }else if(horas >= 18 && horas < 23){
-      mostrehora.innerText = `Agora é ${horas} Horas Noite`
+      
+      img.src = 'tarde.jpg';
+      mostrehora.appendChild(img);
+    }else if(horas >= 18){
+      img.src = 'noite.jpg';
+      mostrehora.appendChild(img);
+      window.document.body.style.backgroundImage = "url(noite.jpg)";
     }
-
 }
 //-------------------
 //Código da foto...
