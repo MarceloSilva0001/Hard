@@ -96,7 +96,7 @@ function anodenascimento(){
     //Atribuidno a variavel genero uma valor de string vazio
     var genero = ''
 
-    //como no getElementById, que seleciona uma tag que existe a guarda na variavel, "document.createElement('tag')", cria uma tag e armazena ela dentro de uma variavel como fazemos como é feito da outra forma, resumindo ele cria uma tag
+    //como no getElementById, que seleciona uma tag que existe a guarda na variavel, "document.createElement('tag')", cria uma tag e armazena ela dentro de uma variavel como fazemos como é feito da outra forma, resumindo ele cria uma tag.
     var img = document.createElement('img')
 
     //Aqui está sendo atruibuido um id para a tag que foi criada com o "createElement('img')", como nas tag normais é importante o id para identificação e como é foi criada atraves do js, pelo js colocamos o id vinculado a tag
