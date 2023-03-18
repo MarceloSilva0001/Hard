@@ -164,6 +164,22 @@ function mudarFundo(){
       
     }
 }
+function xAOy(){
+
+  var inicio  = document.getElementById("inicio").value;
+  var fim = document.getElementById("fim").value;
+  var res7 = document.getElementById("res7");
+  inicio = Number(inicio);
+  fim = Number(fim);
+  if(inicio < fim && fim > inicio){
+    for(var i = inicio; i <= fim;i++)
+  res7.innerHTML += ` >${i}`
+  }else{
+    window.alert("Verifique se de inicio é menor do que do fim")
+  }
+  
+
+}
 //-------------------
 //Código da foto...
   const specs =  {video:{width:320}}
