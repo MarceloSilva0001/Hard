@@ -90,7 +90,7 @@ function anodenascimento(){
     //recebe a escolha do checbox e armazena na variavel
     var fsex = document.getElementsByName('sexo')
 
-    // Fazendo a subtração do valor ano atual menos o ano de nascimento, e armazeando dentro da variavel idade.
+    // Fazendo a subtração do valor  ano atual menos o ano de nascimento, e armazeando dentro da variavel idade.
     var idade = ano - Number(fano.value)
 
     //Atribuidno a variavel genero uma valor de string vazio
