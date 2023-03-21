@@ -208,4 +208,20 @@ const specs =  {video:{width:320}}
   })//.catch(erro=>{console.log(error)})
  window.addEventListener("DOMContentLoaded",Tirarfoto);
 }
+function analisadordenumeros(){
+  var res8 = document.getElementById("res8")
+  var numero = document.getElementById("numero").value;
 
+  numero = Number(numero);
+
+  var vetor = [];
+
+  if(vetor.indexOf(numero)){
+
+  }
+
+    var option = document.createElement("option");
+    option.textContent = numero;
+    res8.appendChild(option);
+
+}

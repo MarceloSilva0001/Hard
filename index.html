@@ -11,7 +11,15 @@
 <body onload="mudarFundo()">
     <h1 style="text-align: center;"><a href="https://www.javascriptprogressivo.net/2018/08/Exercicios-IF-ELSE-JavaScript.html" target="_blank">Exercicios</a></h1>
     <h2 id="mostrehrs"></h2>
-
+    <!-- Analisador de Numeros -->
+    <div id="andf">
+        <label for="numero">Numero:</label>
+        <input type="number" name="numero" id="numero" class="input">
+        <input type="button" value="Adicionar" class="button" onclick="analisadordenumeros()">
+        <hr>
+        <select name="res8" id="res8" size="10" style="overflow: hidden; min-width:50px;border-radius: 10px; background-color: rgb(25, 183, 231); text-align: center; color: white; font-weight: bolder;"></select>
+        <!-- <p id="res8"></p> -->
+    </div>
     <!-- De x até x -->
     <div>
         Inicio: <input type="Number" id="inicio" class="input" value="1"> <br>
