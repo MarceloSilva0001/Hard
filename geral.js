@@ -195,11 +195,10 @@ function xAOy(){
 function camera(){
   var camera = document.getElementById("camera");
   var play = document.createElement("video");
+  
   camera.appendChild(play);
   play.id = "video";
-  play.setAttribute("autoplay")
-
-
+  play.autoplay = true;
 
 
 const specs =  {video:{width:320}}
@@ -208,9 +207,5 @@ const specs =  {video:{width:320}}
     videoElement.srcObject = stream
   })//.catch(erro=>{console.log(error)})
  window.addEventListener("DOMContentLoaded",Tirarfoto);
-//----------------
-  
-
-
 }
 
