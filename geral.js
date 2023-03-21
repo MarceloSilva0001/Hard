@@ -193,23 +193,24 @@ function xAOy(){
   
 }
 function camera(){
+  var camera = document.getElementById("camera");
+  var play = document.createElement("video");
+  camera.appendChild(play);
+  play.id = "video";
+  play.setAttribute("autoplay")
+
+
+
 
 const specs =  {video:{width:320}}
   navigator.mediaDevices.getUserMedia(specs).then(stream=>{
-
     const videoElement = document.querySelector("#video")
     videoElement.srcObject = stream
-    
   })//.catch(erro=>{console.log(error)})
-
  window.addEventListener("DOMContentLoaded",Tirarfoto);
-
- var play = createElement("au")
+//----------------
   
- var msgcamera = document.getElementById("msgcamera")
 
- msgcamera.innerHTML =  "Sorria, você está sendo Filmando!!"
 
- 
 }
 
