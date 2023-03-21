@@ -174,16 +174,18 @@ function xAOy(){
 //Convertendo os valores de input em Numero
   inicio = Number(inicio);
   fim = Number(fim);
-  pulo = Number(pulo);
+  pulo = Number(pulo); 
 //Criando regra de validação
   if(inicio < fim){
-    for(var i = inicio; i <= fim;i++)
-      
+    for(var i = inicio; i <= fim;i+=pulo){
       res7.innerHTML += ` >${i}`;
-
+    }
+        
   }else{
-    for(var i = inicio; i >= fim;i--)
+    for(var i = inicio; i >= fim;i-=pulo){
       res7.innerHTML += ` >${i}`;
+    }
+      
   }
 }
 
