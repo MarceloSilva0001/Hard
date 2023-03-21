@@ -165,21 +165,38 @@ function mudarFundo(){
     }
 }
 function xAOy(){
-
+//coletando o valores de input
   var inicio  = document.getElementById("inicio").value;
   var fim = document.getElementById("fim").value;
+  var pulo = document.getElementById("pulo").value;
+//Coletando o id de uma tag
   var res7 = document.getElementById("res7");
+//Convertendo os valores de input em Numero
   inicio = Number(inicio);
   fim = Number(fim);
-  if(inicio < fim && fim > inicio){
+  pulo = Number(pulo);
+//Criando regra de validação
+  if(inicio < fim){
     for(var i = inicio; i <= fim;i++)
-  res7.innerHTML += ` >${i}`
-  }else{
-    window.alert("Verifique se de inicio é menor do que do fim")
-  }
-  
+      
+      res7.innerHTML += ` >${i}`;
 
+  }else{
+    for(var i = inicio; i >= fim;i--)
+      res7.innerHTML += ` >${i}`;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
 //-------------------
 //Código da foto...
   const specs =  {video:{width:320}}
