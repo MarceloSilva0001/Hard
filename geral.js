@@ -82,7 +82,7 @@ function anodenascimento(){
     var fano = document.getElementById('nasc')
     var res = document.getElementById('res')
     
-//fano.value.lenght, valida se o usuario  não  digitou nada, com isso o valor fica como zero
+//fano.value.lenght, valida se o usuario   não  digitou nada, com isso o valor fica como zero
 //fano.value > ano, valida se ano digitado é maior que o ano atual....
  if(fano.value.lenght == 0 || fano.value > ano){
     window.alert('erro')
