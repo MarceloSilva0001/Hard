@@ -174,34 +174,27 @@ function xAOy(){
 //Convertendo os valores de input em Numero
   inicio = Number(inicio);
   fim = Number(fim);
-  pulo = Number(pulo); 
+  pulo = Number(pulo);
 //Criando regra de validação
-  if(inicio < fim){
-    for(var i = inicio; i <= fim;i+=pulo){
-      res7.innerHTML += ` >${i}`;
-    }
-        
+  res7.innerHTML = "";
+  if(inicio >= 1 && fim >= 1 && pulo >= 1){
+        if(inicio < fim){
+          for(var i = inicio; i <= fim;i+=pulo){
+            res7.innerHTML += ` >${i}`;
+          }
+      }else{
+          for(var i = inicio; i >= fim;i-=pulo){
+            res7.innerHTML += ` >${i}`;
+          }
+      }
   }else{
-    for(var i = inicio; i >= fim;i-=pulo){
-      res7.innerHTML += ` >${i}`;
-    }
-      
+    window.alert("Verifique se tem algum dos campos vazio ou com valor '0' ")
   }
+  
 }
+function camera(){
 
-
-
-
-
-
-
-
-
-
-
-//-------------------
-//Código da foto...
-  const specs =  {video:{width:320}}
+const specs =  {video:{width:320}}
   navigator.mediaDevices.getUserMedia(specs).then(stream=>{
 
     const videoElement = document.querySelector("#video")
@@ -210,5 +203,13 @@ function xAOy(){
   })//.catch(erro=>{console.log(error)})
 
  window.addEventListener("DOMContentLoaded",Tirarfoto);
-//-------------------
+
+ var play = createElement("au")
+  
+ var msgcamera = document.getElementById("msgcamera")
+
+ msgcamera.innerHTML =  "Sorria, você está sendo Filmando!!"
+
+ 
+}
 
