@@ -212,6 +212,7 @@ function analisadordenumeros(){
   var res8 = document.getElementById("res8")
   var numero = document.getElementById("numero").value;
   numero = Number(numero);
+  
   var vetor = [];
 
   function aa(n){
