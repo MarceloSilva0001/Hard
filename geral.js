@@ -211,18 +211,27 @@ const specs =  {video:{width:320}}
 function analisadordenumeros(){
   var res8 = document.getElementById("res8")
   var numero = document.getElementById("numero").value;
-
   numero = Number(numero);
-
   var vetor = [];
 
-  if(vetor.indexOf(numero) == numero){
+  function aa(n){
+    if(Number(n) >= 1 && Number(n) <= 200){return true;}else{return false;}}
 
-    var option = document.createElement("option");
-    option.textContent = numero;
-    res8.appendChild(option);
-    
-  }else{
-    window.alert("Esse Numero ja foi digitado")
+  function bb(l,n){
+    if(l.indexOf(n) != -1){ return true;}else{ return false;}}
+  
+  function adc(){
+    if(aa(numero.value) && bb(numero.value, vetor)){
+
+     var option = document.createElement("option");
+     option.textContent = numero;
+     res8.appendChild(option);
+
+    }else{
+      window.alert("numero ja adicionado!!!")
+    }
   }
+     
+
+  
 }
