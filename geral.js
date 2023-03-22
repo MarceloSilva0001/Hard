@@ -216,12 +216,13 @@ function analisadordenumeros(){
 
   var vetor = [];
 
-  if(vetor.indexOf(numero)){
-
-  }
+  if(vetor.indexOf(numero) == numero){
 
     var option = document.createElement("option");
     option.textContent = numero;
     res8.appendChild(option);
-
+    
+  }else{
+    window.alert("Esse Numero ja foi digitado")
+  }
 }
