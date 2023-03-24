@@ -242,21 +242,28 @@ function adc(){
   }
 }
 function vrf(){
- // teste8.innerHTML += `O Vetor tem: ${vetor.length} Numeros </br>`;
-  // for(let pos in vetor){
-  //   teste8.innerHTML += `Todos os numeros${vetor[pos]} `;
-  // }
+  
+ 
   var maior = vetor[0];
   var menor = vetor[0];
-
+  var soma = 0;
+  var media = 0;
+ 
   for(let pos in vetor){
+
+     soma += vetor[pos];
+    media = soma / vetor.length;
+
     if(vetor[pos] > maior){
       maior = vetor[pos];
     }
     if(vetor[pos] < maior){
       menor = vetor[pos];
     }
-    teste8.innerHTML += `Maior:${maior} </br>Menor:${menor}`;
   }
-  
+  teste8.innerHTML += `Menor:${menor} </br>`;
+  teste8.innerHTML += `Maior:${maior}</br>`;
+  teste8.innerHTML += `O Vetor tem: ${vetor.length} Numeros </br>`;
+  teste8.innerHTML += `Soma entre os valores:${soma}</br>`;
+  teste8.innerHTML += `Média entre os valores:${media}</br>`;
 }
