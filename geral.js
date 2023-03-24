@@ -213,15 +213,17 @@ var res8 = document.getElementById("res8");
 var teste8 = document.getElementById("teste8");
 var numero = document.getElementById("numero8");
 
+  //numero = Number(numero.value)
 var vetor = [];
 
 function aa(n){
-if(n >= 1 && n <= 200){
+if(Number(n) >= 1 && Number(n) <= 200){
     return true;
 }else{
     return false;}}
   
 function bb(n,l){
+
 if(l.indexOf(Number(n)) != -1){
    return true;
   }else{ 
@@ -229,7 +231,7 @@ if(l.indexOf(Number(n)) != -1){
   
 function adc(){
   
-  teste8.innerHTML += numero;
+  teste8.innerHTML += numero.value;
 
   if(aa(numero.value) && !bb(numero.value, vetor)){
 
@@ -237,7 +239,7 @@ function adc(){
 
    var option = document.createElement("option");
 
-   option.textContent = numero.value;
+   option.textContent = `${numero.value}: Adicionado`;
 
    res8.appendChild(option);
 
