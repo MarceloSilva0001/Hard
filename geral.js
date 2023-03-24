@@ -209,25 +209,3 @@ const specs =  {video:{width:320}}
  window.addEventListener("DOMContentLoaded",Tirarfoto);
 }
 //uma coisa só
-  var res8 = document.getElementById("res8")
-  var numero = document.getElementById("numero").value;
-  numero = Number(numero);
-
-  var vetor = [];
-
-function aa(n){if(Number(n) >= 1 && Number(n) <= 200){return true;}else{return false;}}
-    
-function bb(l,n){if(l.indexOf(n) != -1){ return true;}else{ return false;}}
-    
-function analisadordenumeros(){
-  
-    if(aa(numero.value) && bb(numero.value, vetor)){
-    vetor.push(Number(numero.value))
-     var option = document.createElement("option");
-     option.textContent = numero.value;
-     res8.appendChild(option);
-
-    }else{
-      window.alert("numero ja adicionado!!!")
-    }
-}
