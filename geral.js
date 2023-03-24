@@ -209,3 +209,39 @@ const specs =  {video:{width:320}}
  window.addEventListener("DOMContentLoaded",Tirarfoto);
 }
 //uma coisa só
+var res8 = document.getElementById("res8");
+var teste8 = document.getElementById("teste8");
+var numero = document.getElementById("numero8");
+
+var vetor = [];
+
+function aa(n){
+if(n >= 1 && n <= 200){
+    return true;
+}else{
+    return false;}}
+  
+function bb(n,l){
+if(l.indexOf(Number(n)) != -1){
+   return true;
+  }else{ 
+   return false;}}
+  
+function adc(){
+  
+  teste8.innerHTML += numero;
+
+  if(aa(numero.value) && !bb(numero.value, vetor)){
+
+   vetor.push(Number(numero.value));
+
+   var option = document.createElement("option");
+
+   option.textContent = numero.value;
+
+   res8.appendChild(option);
+
+  }else{
+    window.alert("numero ja adicionado!!!");
+  }
+}
