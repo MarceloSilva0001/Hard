@@ -208,6 +208,13 @@ const specs =  {video:{width:320}}
   })//.catch(erro=>{console.log(error)})
  window.addEventListener("DOMContentLoaded",Tirarfoto);
 }
+//uma coisa só
+function aa(n){
+    if(Number(n) >= 1 && Number(n) <= 200){return true;}else{return false;}}
+
+function bb(l,n){
+    if(l.indexOf(n) != -1){ return true;}else{ return false;}}
+
 function analisadordenumeros(){
   var res8 = document.getElementById("res8")
   var numero = document.getElementById("numero").value;
@@ -215,12 +222,6 @@ function analisadordenumeros(){
   
   var vetor = [];
 
-  function aa(n){
-    if(Number(n) >= 1 && Number(n) <= 200){return true;}else{return false;}}
-
-  function bb(l,n){
-    if(l.indexOf(n) != -1){ return true;}else{ return false;}}
-  
   function adc(){
     if(aa(numero.value) && bb(numero.value, vetor)){
 
@@ -232,7 +233,5 @@ function analisadordenumeros(){
       window.alert("numero ja adicionado!!!")
     }
   }
-     
-
   
 }
