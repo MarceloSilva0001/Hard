@@ -212,38 +212,51 @@ const specs =  {video:{width:320}}
 var res8 = document.getElementById("res8");
 var teste8 = document.getElementById("teste8");
 var numero = document.getElementById("numero8");
-
-  //numero = Number(numero.value)
+  //numero = Number(numero.value) 
 var vetor = [];
-
 function aa(n){
 if(Number(n) >= 1 && Number(n) <= 200){
     return true;
 }else{
-    return false;}}
-  
+    return false;}
+} 
 function bb(n,l){
 
 if(l.indexOf(Number(n)) != -1){
    return true;
   }else{ 
-   return false;}}
-  
+   return false;}
+}
 function adc(){
-  
-  teste8.innerHTML += numero.value;
-
   if(aa(numero.value) && !bb(numero.value, vetor)){
 
    vetor.push(Number(numero.value));
 
    var option = document.createElement("option");
 
-   option.textContent = `${numero.value}: Adicionado`;
+   option.textContent = `${numero.value}: Adc`;
 
    res8.appendChild(option);
-
   }else{
     window.alert("numero ja adicionado!!!");
   }
+}
+function vrf(){
+ // teste8.innerHTML += `O Vetor tem: ${vetor.length} Numeros </br>`;
+  // for(let pos in vetor){
+  //   teste8.innerHTML += `Todos os numeros${vetor[pos]} `;
+  // }
+  var maior = vetor[0];
+  var menor = vetor[0];
+
+  for(let pos in vetor){
+    if(vetor[pos] > maior){
+      maior = vetor[pos];
+    }
+    if(vetor[pos] < maior){
+      menor = vetor[pos];
+    }
+    teste8.innerHTML += `Maior:${maior} </br>Menor:${menor}`;
+  }
+  
 }
