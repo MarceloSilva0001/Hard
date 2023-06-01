@@ -1,0 +1,1 @@
+[{"endereco":"http://10.3.14.251:4999","nome":"Mundo Animal - Sorocaba"},{"endereco":"http://192.168.15.100:4999","nome":"Mundo Animal - Curitiba"},{"endereco":"http://192.168.15.180:4999","nome":"Mundo Animal - Santos"},{"endereco":"http://192.168.15.200:4999","nome":"Mundo Animal - Vila Ema"},{"endereco":"http://10.3.14.50:4999","nome":"Mundo Animal - Santo andré"}]
