@@ -212,6 +212,7 @@ const specs =  {video:{width:320}}
 var res8 = document.getElementById("res8");
 var teste8 = document.getElementById("teste8");
 var numero = document.getElementById("numero8");
+
   //numero = Number(numero.value) 
 var vetor = [];
 function aa(n){
@@ -257,7 +258,7 @@ function vrf(){
     if(vetor[pos] > maior){
       maior = vetor[pos];
     }
-    if(vetor[pos] < maior){
+    if(vetor[pos] < menor){
       menor = vetor[pos];
     }
   }
